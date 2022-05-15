@@ -9,6 +9,8 @@ namespace eCommerce.Domain.Interfaces.Repositories
 {
     public interface IArticleRepository
     {
-        Task<IEnumerable<Article>> GetArticlesAsync();
+        Task <IEnumerable<Article>> GetArticlesAsync();
+        //IAsyncEnumerable<Article> GetArticlesAsync();
+
     }
 }

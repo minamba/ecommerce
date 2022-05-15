@@ -10,5 +10,6 @@ namespace eCommerce.Domain.Interfaces.Services
     public interface IArticleService
     {
         Task<IEnumerable<Article>> GetArticlesAsync();
+        //IAsyncEnumerable<Article> GetArticlesAsync();
     }
 }

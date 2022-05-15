@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerce.Domain.Models
+namespace eCommerce.Dal.Dto
 {
     [FirestoreData]
-    public class Article
+    public class ArticleDto
     {
         [FirestoreProperty]
         public int IdArticle { get; set; }
@@ -20,19 +20,5 @@ namespace eCommerce.Domain.Models
         public float Price { get; set; }
         //public ArticleImage Image { get; set; }
 
-
-
-        public Article(int idArticle, string name, string description, float price)
-        {
-            IdArticle = idArticle;
-            Name = name;
-            Description = description;
-            Price = price;
-        }
-
-        public Article()
-        {
-
-        }
     }
 }
